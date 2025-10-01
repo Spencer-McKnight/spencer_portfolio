@@ -1,22 +1,41 @@
-:root {
-  color-scheme: light dark;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 84% 5%;
+    --primary: 222 47% 11%;
+    --primary-foreground: 210 40% 98%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --border: 214 32% 91%;
+    --ring: 222 84% 5%;
+    --radius: 0.5rem;
+  }
 
-html, body {
-  padding: 0;
-  margin: 0;
-}
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 18%;
+    --accent-foreground: 210 40% 98%;
+    --border: 217 33% 18%;
+    --ring: 213 27% 84%;
+  }
 
-body {
-  line-height: 1.5;
-}
-
-main h1 {
-  margin: 0 0 0.5rem;
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 

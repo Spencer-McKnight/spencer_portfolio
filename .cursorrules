@@ -2,5 +2,5 @@
 
 - Consult `PROJECT_OUTLINE.md` for context, scope, priorities, and open tasks.
 - Default to TypeScript, Next.js App Router, React 18.
-- Keep edits minimal and aligned with the outline.
-- Ask for clarification only if the outline/codebase lacks necessary info.
+- Keep edits minimal, aligned with the outline, and without unnecessary verbosity.
+- Suggest concise and modern technical architecture features, or packages, that can be leveraged to achieve a smart and experienced feel.
